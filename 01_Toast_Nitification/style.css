@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --dark:   #34495e;
+    --light: #ffff;
+    --success: #0ABF3e;
+    --error:#E24D4C;
+    --warning: #E9BDec;
+    --info: #3498DB;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--dark) ;
+}
+
+.notications{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+}
+
+.notications :where(.toast, .column){
+    display: flex;
+    align-items: center;
+}
+.notications .toast{
+    width: 400px;
+    list-style: none;
+    border-radius: 4px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: var(--light);
+    justify-content: space-between;
+
+
+}
+
+.toast .column i {
+   font-size: 1.75rem; 
+}
+
+.toast .column span{
+    font-size: 1.07rem;
+    margin-left: 12px;
+}
+
+.toast i:last-child{
+    color: #aeb0d7;
+    cursor: pointer;
+}
