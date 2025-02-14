@@ -44,7 +44,7 @@ body{
     margin-bottom: 10px;
     background: var(--light);
     justify-content: space-between;
-    animation: show_toast 0.3s ease forwards;
+    /* animation: show_toast 0.3s ease forwards; */
 
 
 }
@@ -68,10 +68,10 @@ body{
     position: absolute ;
     content: "";
     height: 3px;
-    width:100%;
+    width:50%;
     bottom: 0px;
     left: 0px;
-    animation: progress 5s linear forwards;
+    /* animation: progress 5s linear forwards; */
     
 }
 
@@ -97,6 +97,7 @@ body{
     background: var(--info);
 
 }
+
 
 .toast .column i {
    font-size: 1.75rem; 
