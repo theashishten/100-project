@@ -47,3 +47,4 @@ const createToast = (id) => {
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => createToast(btn.id));
 });
+
