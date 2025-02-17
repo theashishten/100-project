@@ -45,6 +45,15 @@ const createToast = (id) => {
   toast.timeoutId = setTimeout(()=> removeToast(toast),toastDetails.timeer)
 };
 buttons.forEach((btn) => {
-  btn.addEventListener("click", () => createToast(btn.id));
+  btn.addEventListener("click", () => {
+    createToast(btn.id)
+    if (confirm("Do you agree?")) {
+      console.log("User agreed.");
+  } else {
+      console.log("User disagreed.");
+  }
+  
+  });
+
 });
 
