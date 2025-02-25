@@ -1,8 +1,16 @@
 const carousel = document.querySelector(".carousel");
+const arrBtns = document.querySelectorAll(".wrapper i");
 
 let isDragging = false,
   startX,
   startScrollLeft;
+
+  arrBtns.forEach(btn =>{
+    btn.addEventListener('click',()=>{
+      console.log(btn.id);
+      
+    })
+  })
 
 const dragStart = (e) => {
   isDragging = true;
