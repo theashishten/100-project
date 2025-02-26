@@ -1,13 +1,16 @@
 const carousel = document.querySelector(".carousel");
-const arrBtns = document.querySelectorAll(".wrapper i");
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+console.log(firstCardWidth);
 
 let isDragging = false,
   startX,
   startScrollLeft;
 
-  arrBtns.forEach(btn =>{
+  arrowBtns.forEach(btn =>{
     btn.addEventListener('click',()=>{
       console.log(btn.id);
+      carousel.scrollLeft += btn.id === 'left' ? - firstCardWidth : firstCardWidth
       
     })
   })
