@@ -1,13 +1,19 @@
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const carouselChildrens = [...carousel.children]
+
 
 let isDragging = false,
   startX,
   startScrollLeft;
 
+  let cardPerView = Math.round(carousel.offsetWidth/firstCardWidth)
+
+  carouselChildrens.slice()
+
   arrowBtns.forEach(btn =>{
-    btn.addEventListener('click',()=>{
+    btn.adddfsdEventListener('click',()=>{
       console.log(btn.id);
       carousel.scrollLeft += btn.id === 'left' ? - firstCardWidth : firstCardWidth
       
