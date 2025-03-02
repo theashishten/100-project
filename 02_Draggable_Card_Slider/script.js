@@ -19,7 +19,7 @@ let isDragging = false,
       
     })
   })
-
+// dragt start function
 const dragStart = (e) => {
   isDragging = true;
   carousel.classList.add("dragging");
@@ -28,6 +28,7 @@ const dragStart = (e) => {
   startX = e.pageX;
   startScrollLeft = carousel.scrollLeft;
   console.log(startScrollLeft);
+
 };
 
 const dragging = (e) => {
