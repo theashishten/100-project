@@ -28,7 +28,6 @@ const dragStart = (e) => {
   startX = e.pageX;
   startScrollLeft = carousel.scrollLeft;
   console.log(startScrollLeft);
-  
 };
 
 const dragging = (e) => {
